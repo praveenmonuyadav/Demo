@@ -3,15 +3,13 @@ package test;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.regex.Pattern;
-import java.io.*;
-import java.text.DateFormat;
 
 public class DriverClass {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		PicoyPlaca pl = new PicoyPlaca();
-		Date CurrentTime= new Date();
+		//Date CurrentTime= new Date();
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Please enter car number: ");
 		String NumberPlate=sc.nextLine();

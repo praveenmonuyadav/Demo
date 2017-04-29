@@ -1,7 +1,6 @@
 package test;
 
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -15,7 +14,6 @@ public class PicoyPlaca {
 		//Date t = DateFormat.getTimeInstance(DateFormat.SHORT).parse(c);
 		SimpleDateFormat displayFormat = new SimpleDateFormat("HH:mm");
 		Date date = displayFormat.parse(c);
-		String dstr= DateFormat.getTimeInstance().format(date);
 		String pNumber =a;
 		int weekDay=d.getDay();
 		    String string1 = "07:00";
