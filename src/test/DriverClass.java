@@ -15,12 +15,14 @@ public class DriverClass {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Please enter car number: ");
 		String NumberPlate=sc.nextLine();
+		if(!NumberPlate.equals("") && Pattern.matches("\\d+",NumberPlate ))
+		{
 		System.out.print("Please enter Date in this format, DD/MM/YYYY : ");
 		String UserDate=sc.nextLine();
-		System.out.print("Please enter time in this format, HH:MM AM/PM : ");
+		System.out.print("Please enter time in this format, HH:MM 24 hr format : ");
 		String UserTime=sc.nextLine();
-		if(!NumberPlate.equals("") && Pattern.matches("\\d+",NumberPlate ))
 		pl.predictor(NumberPlate, UserDate, UserTime);
+		}
 		else
 			System.err.println("\n"+" !!!!! Please enter valid number !!!!!");
 		//String regex = "\\d+";
